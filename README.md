@@ -22,8 +22,11 @@ This Python project extracts detailed match data from [Gol.gg](https://gol.gg) f
 
 ```bash
 pip install selenium pandas numpy webdriver-manager
+
 Optional (for parsing HTML more robustly):
+```bash
 pip install html5lib
+
 How It Works
 	1.	You define a list or range of game_ids to scrape (e.g., [62733, 62734, ...])
 	2.	The script visits each match page on Gol.gg and:
@@ -36,6 +39,7 @@ Usage
 	1.	Clone this repository or copy the script to your project.
 	2.	Edit the list of game_ids inside the script.
 	3.	Run the scraper:
+```bash
 python match_scraper.py
 	4.	Output CSV will be saved to:
 You can customize this output path.
