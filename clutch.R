@@ -338,3 +338,28 @@ p6 <- plot_slopes(sum_slopes6, fit5, "With opponent adjustment",
 p5 + p6
 
 p5
+
+fit <- add_criterion(fit, "loo")
+fit1 <- add_criterion(fit1, "loo")
+
+fit2 <- add_criterion(fit2, "loo")
+fit3 <- add_criterion(fit3, "loo")
+
+library(modelsummary)
+
+library(modelsummary)
+
+# Example: assuming you have lists of models
+fits <- list(fit1 = fit, fit2 = fit2, fit3 = fit3, fit4 = fit4, fit5 = fit5)
+fits_adj <- list(fit1a = fit1, fit2a = fit2a, fit3a = fit3a, fit4a = fit4a, fit5a = fit5a)
+
+# Loop through indices 1:5
+for (i in 1:5) {
+  file_name <- paste0("brms_models", i, ".docx")
+  
+  msummary(
+    list("Baseline" = fits[[i]], "Opponent-adjusted" = fits_adj[[i]]),
+    statistic = "[{conf.low}, {conf.high}]",
+    output = file_name
+  )
+}
