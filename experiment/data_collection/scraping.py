@@ -208,31 +208,3 @@ def run_scraper_on_batch(batch, batch_idx):
         print(f"[✔] Saved batch {batch_idx} with {len(batch_df)} rows.")
     else:
         print(f"[!] No valid matches found in batch {batch_idx}.")
-
-# Split into batches and run
-batches = np.array_split(game_ids, len(game_ids) // 1000)
-for idx, batch in enumerate(batches):
-    run_scraper_on_batch(batch, idx)
-
-
-# %%
-game_ids1 = np.arange(62159, 62821)
-
-# Split into batches and run
-num_batches = max(1, len(game_ids1) // 1000)
-batches = np.array_split(game_ids1, num_batches)
-for idx, batch in enumerate(batches):
-    run_scraper_on_batch(batch, idx+8)
-
-
-# %%
-game_ids2 = np.arange(62539, 62821)
-num_batches = max(1, len(game_ids1) // 1000)
-batches = np.array_split(game_ids1, num_batches)
-for idx, batch in enumerate(batches):
-    run_scraper_on_batch(batch, idx+9)
-
-# %%
-
-
-
