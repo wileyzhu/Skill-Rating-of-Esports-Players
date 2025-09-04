@@ -46,14 +46,9 @@ pip install html5lib
 3. Run the scraper:  
 
 ```bash
-python match_scraper.py
+python scarping.py
 ```
 
-4. Output CSV will be saved to a location like:
-
-```
-/users/<yourname>/
-```
 
 ## Known Limitations
 
