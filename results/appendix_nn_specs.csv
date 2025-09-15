@@ -1,0 +1,6 @@
+Role,Layers,Total_params,Trainable_params,Non_trainable_params,Optimizer,Learning_rate,Loss,Batch_size,Epochs
+ADC,"Dense(80, relu) → Dropout(0.3) → Dense(1, sigmoid)",1041,1041,0,Adam,,binary_crossentropy,,
+Jungle,"Dense(30, relu) → Dropout(0.3) → Dense(30, relu) → Dropout(0.3) → Dense(1, sigmoid)",1321,1321,0,Adam,,binary_crossentropy,,
+Mid,"Dense(50, relu) → Dropout(0.2) → Dense(1, sigmoid)",651,651,0,Adam,,binary_crossentropy,,
+Support,"Dense(70, relu) → Dropout(0.3) → Dense(1, sigmoid)",911,911,0,Adam,,binary_crossentropy,,
+Top,"Dense(70, relu) → Dropout(0.2) → Dense(1, sigmoid)",911,911,0,Adam,,binary_crossentropy,,

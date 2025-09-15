@@ -1,0 +1,6 @@
+Role,n_estimators,max_depth,learning_rate,subsample,colsample_bytree,gamma,reg_lambda,reg_alpha,min_child_weight,objective,random_state
+ADC,,,,,,,,,,,RandomState(MT19937)
+Jungle,,,,,,,,,,,RandomState(MT19937)
+Mid,,,,,,,,,,,RandomState(MT19937)
+Support,,,,,,,,,,,RandomState(MT19937)
+Top,,,,,,,,,,,RandomState(MT19937)
